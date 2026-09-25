@@ -1,0 +1,59 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Room</title>
+
+    <style>
+        body {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            white-space: normal;
+            overflow-wrap: break-word;
+            word-break: keep-all;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🔒 비밀방</h1>
+
+    <p>비밀번호를 입력하세요.</p>
+
+    <form method="POST">
+        <input type="password" name="password">
+        <button type="submit">입장</button>
+    </form>
+
+    <p>{{ message }}</p>
+
+    {% if secret %}
+        <hr>
+
+        <h2>
+            가루 어제 멘헤라 존나터지고 또 오늘괜찮던데 이유를 모르겠음
+            그나마 유추할수있는건 내가 어제 트위터 짤 보내고
+            가루가 또 멘헤라 터질거같으면서 쓴 말에 진지한답변요즘못한다했던게다고
+            그다음에 trpg지대에서 역할에 바보있길래 농당으로 나는 바보 아니다 이랬는데
+            욕하면서 지워준다 이랬는데 오늘은 또 반응이 왤케 살벌해 보이는지를 모르겠다,,,
+            뭐 내 생각이 틀릴수도는 있고 피해망상일수돈 있는데 그냥 뭐 그렇다고,,
+            확실한건 나도 멘헤라성 발언에 지치긴 한듯 그래서 그냥 깔끔하게 dm다시는 안보기로함
+            중요한것만 보고 그렇게 하기로했음 ㅇㅇ;;
+        </h2>
+
+        <p>
+            여기는 비밀번호를 맞힌 사람만 볼 수 있는 내용입니다.
+        </p>
+    {% endif %}
+
+</body>
+</html>
+```
